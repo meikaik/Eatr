@@ -24,12 +24,17 @@
                                                 selector:@selector(showTime)
                                                 userInfo:NULL
                                                  repeats:YES];
+    // Category Food Carbs Protein Fats Calories
+    NSArray *ingredients = [NSArray arrayWithObjects:
+                            [NSArray arrayWithObjects:@"Breakfast", @"Orange Juice", @"26", @"2", @"1", @"110", nil], nil];
+    
+    NSLog(@"%@", [[ingredients objectAtIndex:0] objectAtIndex:3]);
 }
 
 - (void)showTime{
     NSDate *now=[NSDate date];
     NSDateFormatter *dateFormatter=[NSDateFormatter new];
-    [dateFormatter setDateFormat:@"HH:mm:ss"];
+    [dateFormatter setDateFormat:@"HH:mm"];
     timeLabel.text=[dateFormatter stringFromDate:now];
 }
 
