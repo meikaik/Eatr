@@ -12,6 +12,30 @@
 		B9183C2D1DCE6CE200BA90DA /* Pizza-Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C2A1DCE6CE200BA90DA /* Pizza-Slice.png */; };
 		B9183C331DCE6EA500BA90DA /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C321DCE6EA500BA90DA /* Banana.png */; };
 		B9183C351DCE6F6400BA90DA /* Bacon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C341DCE6F6400BA90DA /* Bacon.png */; };
+		B9183C4E1DCE7C4D00BA90DA /* BeefsteakTomato.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C361DCE7C4D00BA90DA /* BeefsteakTomato.png */; };
+		B9183C4F1DCE7C4D00BA90DA /* BreakfastSausage.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C371DCE7C4D00BA90DA /* BreakfastSausage.png */; };
+		B9183C501DCE7C4D00BA90DA /* Broccoli.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C381DCE7C4D00BA90DA /* Broccoli.png */; };
+		B9183C511DCE7C4D00BA90DA /* Carrots.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C391DCE7C4D00BA90DA /* Carrots.png */; };
+		B9183C521DCE7C4D00BA90DA /* Cereal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C3A1DCE7C4D00BA90DA /* Cereal.png */; };
+		B9183C531DCE7C4D00BA90DA /* CheddarCheese.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C3B1DCE7C4D00BA90DA /* CheddarCheese.png */; };
+		B9183C541DCE7C4D00BA90DA /* Chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C3C1DCE7C4D00BA90DA /* Chicken.png */; };
+		B9183C551DCE7C4D00BA90DA /* ChickenNoodleSoup.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C3D1DCE7C4D00BA90DA /* ChickenNoodleSoup.png */; };
+		B9183C561DCE7C4D00BA90DA /* Chickpeas.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C3E1DCE7C4D00BA90DA /* Chickpeas.png */; };
+		B9183C571DCE7C4D00BA90DA /* Couscous.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C3F1DCE7C4D00BA90DA /* Couscous.png */; };
+		B9183C581DCE7C4D00BA90DA /* Egg.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C401DCE7C4D00BA90DA /* Egg.png */; };
+		B9183C591DCE7C4D00BA90DA /* Gourmet-Burger.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C411DCE7C4D00BA90DA /* Gourmet-Burger.png */; };
+		B9183C5A1DCE7C4D00BA90DA /* GreenPepper.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C421DCE7C4D00BA90DA /* GreenPepper.png */; };
+		B9183C5B1DCE7C4D00BA90DA /* Hummus.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C431DCE7C4D00BA90DA /* Hummus.png */; };
+		B9183C5C1DCE7C4D00BA90DA /* ItalianBread.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C441DCE7C4D00BA90DA /* ItalianBread.png */; };
+		B9183C5D1DCE7C4D00BA90DA /* Muffin.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C451DCE7C4D00BA90DA /* Muffin.png */; };
+		B9183C5E1DCE7C4D00BA90DA /* Oatmeal.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C461DCE7C4D00BA90DA /* Oatmeal.png */; };
+		B9183C5F1DCE7C4D00BA90DA /* Pancake.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C471DCE7C4D00BA90DA /* Pancake.png */; };
+		B9183C601DCE7C4D00BA90DA /* PlainBagel.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C481DCE7C4D00BA90DA /* PlainBagel.png */; };
+		B9183C611DCE7C4D00BA90DA /* RedPepper.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C491DCE7C4D00BA90DA /* RedPepper.png */; };
+		B9183C621DCE7C4D00BA90DA /* Rice.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4A1DCE7C4D00BA90DA /* Rice.png */; };
+		B9183C631DCE7C4D00BA90DA /* Salmon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4B1DCE7C4D00BA90DA /* Salmon.png */; };
+		B9183C641DCE7C4D00BA90DA /* Spinach.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4C1DCE7C4D00BA90DA /* Spinach.png */; };
+		B9183C651DCE7C4D00BA90DA /* Tofu.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4D1DCE7C4D00BA90DA /* Tofu.png */; };
 		B926962D1DCE2C230023C14C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B926962C1DCE2C230023C14C /* main.m */; };
 		B92696301DCE2C230023C14C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B926962F1DCE2C230023C14C /* AppDelegate.m */; };
 		B92696331DCE2C230023C14C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92696321DCE2C230023C14C /* ViewController.m */; };
@@ -49,6 +73,30 @@
 		B9183C2A1DCE6CE200BA90DA /* Pizza-Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pizza-Slice.png"; sourceTree = "<group>"; };
 		B9183C321DCE6EA500BA90DA /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
 		B9183C341DCE6F6400BA90DA /* Bacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bacon.png; sourceTree = "<group>"; };
+		B9183C361DCE7C4D00BA90DA /* BeefsteakTomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeefsteakTomato.png; sourceTree = "<group>"; };
+		B9183C371DCE7C4D00BA90DA /* BreakfastSausage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreakfastSausage.png; sourceTree = "<group>"; };
+		B9183C381DCE7C4D00BA90DA /* Broccoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Broccoli.png; sourceTree = "<group>"; };
+		B9183C391DCE7C4D00BA90DA /* Carrots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carrots.png; sourceTree = "<group>"; };
+		B9183C3A1DCE7C4D00BA90DA /* Cereal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cereal.png; sourceTree = "<group>"; };
+		B9183C3B1DCE7C4D00BA90DA /* CheddarCheese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheddarCheese.png; sourceTree = "<group>"; };
+		B9183C3C1DCE7C4D00BA90DA /* Chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chicken.png; sourceTree = "<group>"; };
+		B9183C3D1DCE7C4D00BA90DA /* ChickenNoodleSoup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChickenNoodleSoup.png; sourceTree = "<group>"; };
+		B9183C3E1DCE7C4D00BA90DA /* Chickpeas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chickpeas.png; sourceTree = "<group>"; };
+		B9183C3F1DCE7C4D00BA90DA /* Couscous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Couscous.png; sourceTree = "<group>"; };
+		B9183C401DCE7C4D00BA90DA /* Egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egg.png; sourceTree = "<group>"; };
+		B9183C411DCE7C4D00BA90DA /* Gourmet-Burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gourmet-Burger.png"; sourceTree = "<group>"; };
+		B9183C421DCE7C4D00BA90DA /* GreenPepper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenPepper.png; sourceTree = "<group>"; };
+		B9183C431DCE7C4D00BA90DA /* Hummus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hummus.png; sourceTree = "<group>"; };
+		B9183C441DCE7C4D00BA90DA /* ItalianBread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ItalianBread.png; sourceTree = "<group>"; };
+		B9183C451DCE7C4D00BA90DA /* Muffin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Muffin.png; sourceTree = "<group>"; };
+		B9183C461DCE7C4D00BA90DA /* Oatmeal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Oatmeal.png; sourceTree = "<group>"; };
+		B9183C471DCE7C4D00BA90DA /* Pancake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pancake.png; sourceTree = "<group>"; };
+		B9183C481DCE7C4D00BA90DA /* PlainBagel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainBagel.png; sourceTree = "<group>"; };
+		B9183C491DCE7C4D00BA90DA /* RedPepper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedPepper.png; sourceTree = "<group>"; };
+		B9183C4A1DCE7C4D00BA90DA /* Rice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rice.png; sourceTree = "<group>"; };
+		B9183C4B1DCE7C4D00BA90DA /* Salmon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salmon.png; sourceTree = "<group>"; };
+		B9183C4C1DCE7C4D00BA90DA /* Spinach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spinach.png; sourceTree = "<group>"; };
+		B9183C4D1DCE7C4D00BA90DA /* Tofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tofu.png; sourceTree = "<group>"; };
 		B92696281DCE2C230023C14C /* LogFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B926962C1DCE2C230023C14C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B926962E1DCE2C230023C14C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +193,30 @@
 		B926962B1DCE2C230023C14C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9183C361DCE7C4D00BA90DA /* BeefsteakTomato.png */,
+				B9183C371DCE7C4D00BA90DA /* BreakfastSausage.png */,
+				B9183C381DCE7C4D00BA90DA /* Broccoli.png */,
+				B9183C391DCE7C4D00BA90DA /* Carrots.png */,
+				B9183C3A1DCE7C4D00BA90DA /* Cereal.png */,
+				B9183C3B1DCE7C4D00BA90DA /* CheddarCheese.png */,
+				B9183C3C1DCE7C4D00BA90DA /* Chicken.png */,
+				B9183C3D1DCE7C4D00BA90DA /* ChickenNoodleSoup.png */,
+				B9183C3E1DCE7C4D00BA90DA /* Chickpeas.png */,
+				B9183C3F1DCE7C4D00BA90DA /* Couscous.png */,
+				B9183C401DCE7C4D00BA90DA /* Egg.png */,
+				B9183C411DCE7C4D00BA90DA /* Gourmet-Burger.png */,
+				B9183C421DCE7C4D00BA90DA /* GreenPepper.png */,
+				B9183C431DCE7C4D00BA90DA /* Hummus.png */,
+				B9183C441DCE7C4D00BA90DA /* ItalianBread.png */,
+				B9183C451DCE7C4D00BA90DA /* Muffin.png */,
+				B9183C461DCE7C4D00BA90DA /* Oatmeal.png */,
+				B9183C471DCE7C4D00BA90DA /* Pancake.png */,
+				B9183C481DCE7C4D00BA90DA /* PlainBagel.png */,
+				B9183C491DCE7C4D00BA90DA /* RedPepper.png */,
+				B9183C4A1DCE7C4D00BA90DA /* Rice.png */,
+				B9183C4B1DCE7C4D00BA90DA /* Salmon.png */,
+				B9183C4C1DCE7C4D00BA90DA /* Spinach.png */,
+				B9183C4D1DCE7C4D00BA90DA /* Tofu.png */,
 				B9183C281DCE6CE200BA90DA /* Milk.png */,
 				B9183C341DCE6F6400BA90DA /* Bacon.png */,
 				B9183C321DCE6EA500BA90DA /* Banana.png */,
@@ -279,12 +351,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9183C5B1DCE7C4D00BA90DA /* Hummus.png in Resources */,
+				B9183C531DCE7C4D00BA90DA /* CheddarCheese.png in Resources */,
+				B9183C5D1DCE7C4D00BA90DA /* Muffin.png in Resources */,
+				B9183C631DCE7C4D00BA90DA /* Salmon.png in Resources */,
 				B9183C2B1DCE6CE200BA90DA /* Milk.png in Resources */,
+				B9183C601DCE7C4D00BA90DA /* PlainBagel.png in Resources */,
+				B9183C521DCE7C4D00BA90DA /* Cereal.png in Resources */,
+				B9183C561DCE7C4D00BA90DA /* Chickpeas.png in Resources */,
 				B926963E1DCE2C230023C14C /* LaunchScreen.storyboard in Resources */,
+				B9183C5E1DCE7C4D00BA90DA /* Oatmeal.png in Resources */,
 				B926963B1DCE2C230023C14C /* Assets.xcassets in Resources */,
+				B9183C551DCE7C4D00BA90DA /* ChickenNoodleSoup.png in Resources */,
+				B9183C611DCE7C4D00BA90DA /* RedPepper.png in Resources */,
 				B9183C2D1DCE6CE200BA90DA /* Pizza-Slice.png in Resources */,
+				B9183C511DCE7C4D00BA90DA /* Carrots.png in Resources */,
 				B9183C2C1DCE6CE200BA90DA /* OrangeJuice.png in Resources */,
+				B9183C4E1DCE7C4D00BA90DA /* BeefsteakTomato.png in Resources */,
+				B9183C641DCE7C4D00BA90DA /* Spinach.png in Resources */,
+				B9183C621DCE7C4D00BA90DA /* Rice.png in Resources */,
+				B9183C541DCE7C4D00BA90DA /* Chicken.png in Resources */,
+				B9183C591DCE7C4D00BA90DA /* Gourmet-Burger.png in Resources */,
+				B9183C5C1DCE7C4D00BA90DA /* ItalianBread.png in Resources */,
 				B92696361DCE2C230023C14C /* Main.storyboard in Resources */,
+				B9183C581DCE7C4D00BA90DA /* Egg.png in Resources */,
+				B9183C5F1DCE7C4D00BA90DA /* Pancake.png in Resources */,
+				B9183C651DCE7C4D00BA90DA /* Tofu.png in Resources */,
+				B9183C5A1DCE7C4D00BA90DA /* GreenPepper.png in Resources */,
+				B9183C571DCE7C4D00BA90DA /* Couscous.png in Resources */,
+				B9183C4F1DCE7C4D00BA90DA /* BreakfastSausage.png in Resources */,
+				B9183C501DCE7C4D00BA90DA /* Broccoli.png in Resources */,
 				B9183C331DCE6EA500BA90DA /* Banana.png in Resources */,
 				B9183C351DCE6F6400BA90DA /* Bacon.png in Resources */,
 			);
