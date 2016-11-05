@@ -24,12 +24,8 @@
     
     [[self collectionView]setDataSource:self];
     [[self collectionView]setDelegate:self];
-    
-<<<<<<< HEAD
-    arrayImages = [[NSArray alloc]initWithObjects:@"banana.png", @"banana.png",@"banana.png",@"banana.png",@"banana.png",@"banana.png",nil];
-=======
+
     arrayImages = [[NSArray alloc]initWithObjects:@"OrangeJuice.png", @"Milk.png", @"Banana.png", @"Bacon.png", @"Pizza-Slice.png", nil];
->>>>>>> 95480dfd1e224af1a73fce7d2543e3240712376c
 }
 
 - (void)didReceiveMemoryWarning {
