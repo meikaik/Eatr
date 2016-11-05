@@ -48,6 +48,10 @@
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%@", indexPath);
+}
+
 /*
 #pragma mark - Navigation
 
