@@ -14,9 +14,23 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.5f
+                                                  target:self
+                                                selector:@selector(showTime)
+                                                userInfo:NULL
+                                                 repeats:YES];
+}
+
+- (void)showTime{
+    NSDate *now=[NSDate date];
+    NSDateFormatter *dateFormatter=[NSDateFormatter new];
+    [dateFormatter setDateFormat:@"HH:mm:ss"];
+    timeLabel.text=[dateFormatter stringFromDate:now];
 }
 
 

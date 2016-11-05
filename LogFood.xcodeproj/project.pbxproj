@@ -16,6 +16,7 @@
 		B926963E1DCE2C230023C14C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B926963C1DCE2C230023C14C /* LaunchScreen.storyboard */; };
 		B92696491DCE2C230023C14C /* LogFoodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B92696481DCE2C230023C14C /* LogFoodTests.m */; };
 		B92696541DCE2C230023C14C /* LogFoodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B92696531DCE2C230023C14C /* LogFoodUITests.m */; };
+		E64C45601DCE3BD800B58527 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C455F1DCE3BD800B58527 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B926964F1DCE2C230023C14C /* LogFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92696531DCE2C230023C14C /* LogFoodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogFoodUITests.m; sourceTree = "<group>"; };
 		B92696551DCE2C230023C14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64C455F1DCE3BD800B58527 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		E64C45621DCE3C0E00B58527 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				B92696311DCE2C230023C14C /* ViewController.h */,
 				B92696321DCE2C230023C14C /* ViewController.m */,
 				B92696341DCE2C230023C14C /* Main.storyboard */,
+				E64C45621DCE3C0E00B58527 /* SettingsViewController.h */,
+				E64C455F1DCE3BD800B58527 /* SettingsViewController.m */,
 				B926963A1DCE2C230023C14C /* Assets.xcassets */,
 				B926963C1DCE2C230023C14C /* LaunchScreen.storyboard */,
 				B926963F1DCE2C230023C14C /* Info.plist */,
@@ -278,6 +283,7 @@
 			files = (
 				B92696331DCE2C230023C14C /* ViewController.m in Sources */,
 				B92696301DCE2C230023C14C /* AppDelegate.m in Sources */,
+				E64C45601DCE3BD800B58527 /* SettingsViewController.m in Sources */,
 				B92696391DCE2C230023C14C /* LogFood.xcdatamodeld in Sources */,
 				B926962D1DCE2C230023C14C /* main.m in Sources */,
 			);
@@ -509,6 +515,7 @@
 				B926965A1DCE2C230023C14C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B926965B1DCE2C230023C14C /* Build configuration list for PBXNativeTarget "LogFoodTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +524,7 @@
 				B926965D1DCE2C230023C14C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B926965E1DCE2C230023C14C /* Build configuration list for PBXNativeTarget "LogFoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +533,7 @@
 				B92696601DCE2C230023C14C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
