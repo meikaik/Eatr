@@ -24,7 +24,7 @@
     [[self collectionView]setDataSource:self];
     [[self collectionView]setDelegate:self];
     
-    arrayImages = [[NSArray alloc]initWithObjects:@"banana.png", @"banana.png", nil];
+    arrayImages = [[NSArray alloc]initWithObjects:@"banana.png", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,15 +39,15 @@
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return [arrayImages count];
 }
-
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
-    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"Cell";
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    [[cell imageCell]setImage: [UIImage imageNamed:[arrayImages objectAtIndex:indexPath.item]]];
+    [[cell imageCell]setImage:[UIImage imageNamed:[arrayImages objectAtIndex:indexPath.item]]];
     
     return cell;
 }
+
 /*
 #pragma mark - Navigation
 

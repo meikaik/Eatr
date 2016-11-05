@@ -18,8 +18,8 @@
 		B92696541DCE2C230023C14C /* LogFoodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B92696531DCE2C230023C14C /* LogFoodUITests.m */; };
 		E64C45601DCE3BD800B58527 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C455F1DCE3BD800B58527 /* SettingsViewController.m */; };
 		E64C45681DCE4A6A00B58527 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = E64C45671DCE4A6A00B58527 /* banana.png */; };
-		E6779D4D1DCE564F0070AEC2 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6779D4C1DCE564F0070AEC2 /* CollectionViewController.m */; };
-		E6779D501DCE570B0070AEC2 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6779D4F1DCE570B0070AEC2 /* CollectionViewCell.m */; };
+		E6779D531DCE5F1E0070AEC2 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6779D521DCE5F1E0070AEC2 /* CollectionViewCell.m */; };
+		E6779D561DCE5F300070AEC2 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6779D551DCE5F300070AEC2 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +60,10 @@
 		E64C455F1DCE3BD800B58527 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		E64C45621DCE3C0E00B58527 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
 		E64C45671DCE4A6A00B58527 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
-		E6779D4B1DCE564F0070AEC2 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = ../CollectionViewController.h; sourceTree = "<group>"; };
-		E6779D4C1DCE564F0070AEC2 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = ../CollectionViewController.m; sourceTree = "<group>"; };
-		E6779D4E1DCE570B0070AEC2 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = ../CollectionViewCell.h; sourceTree = "<group>"; };
-		E6779D4F1DCE570B0070AEC2 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = ../CollectionViewCell.m; sourceTree = "<group>"; };
+		E6779D511DCE5F1E0070AEC2 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = ../CollectionViewCell.h; sourceTree = "<group>"; };
+		E6779D521DCE5F1E0070AEC2 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = ../CollectionViewCell.m; sourceTree = "<group>"; };
+		E6779D541DCE5F300070AEC2 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = ../CollectionViewController.h; sourceTree = "<group>"; };
+		E6779D551DCE5F300070AEC2 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = ../CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +121,10 @@
 				B92696321DCE2C230023C14C /* ViewController.m */,
 				E64C45621DCE3C0E00B58527 /* SettingsViewController.h */,
 				E64C455F1DCE3BD800B58527 /* SettingsViewController.m */,
-				E6779D4B1DCE564F0070AEC2 /* CollectionViewController.h */,
-				E6779D4C1DCE564F0070AEC2 /* CollectionViewController.m */,
-				E6779D4E1DCE570B0070AEC2 /* CollectionViewCell.h */,
-				E6779D4F1DCE570B0070AEC2 /* CollectionViewCell.m */,
+				E6779D511DCE5F1E0070AEC2 /* CollectionViewCell.h */,
+				E6779D521DCE5F1E0070AEC2 /* CollectionViewCell.m */,
+				E6779D541DCE5F300070AEC2 /* CollectionViewController.h */,
+				E6779D551DCE5F300070AEC2 /* CollectionViewController.m */,
 				B92696341DCE2C230023C14C /* Main.storyboard */,
 				B926963A1DCE2C230023C14C /* Assets.xcassets */,
 				B926963C1DCE2C230023C14C /* LaunchScreen.storyboard */,
@@ -295,12 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6779D531DCE5F1E0070AEC2 /* CollectionViewCell.m in Sources */,
+				E6779D561DCE5F300070AEC2 /* CollectionViewController.m in Sources */,
 				B92696331DCE2C230023C14C /* ViewController.m in Sources */,
-				E6779D4D1DCE564F0070AEC2 /* CollectionViewController.m in Sources */,
 				B92696301DCE2C230023C14C /* AppDelegate.m in Sources */,
 				E64C45601DCE3BD800B58527 /* SettingsViewController.m in Sources */,
 				B92696391DCE2C230023C14C /* LogFood.xcdatamodeld in Sources */,
-				E6779D501DCE570B0070AEC2 /* CollectionViewCell.m in Sources */,
 				B926962D1DCE2C230023C14C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
