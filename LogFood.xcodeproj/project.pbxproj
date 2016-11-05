@@ -59,7 +59,7 @@
 		B92696551DCE2C230023C14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64C455F1DCE3BD800B58527 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		E64C45621DCE3C0E00B58527 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
-		E64C45671DCE4A6A00B58527 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		E64C45671DCE4A6A00B58527 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banana.png; path = ../banana.png; sourceTree = "<group>"; };
 		E6779D511DCE5F1E0070AEC2 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = ../CollectionViewCell.h; sourceTree = "<group>"; };
 		E6779D521DCE5F1E0070AEC2 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = ../CollectionViewCell.m; sourceTree = "<group>"; };
 		E6779D541DCE5F300070AEC2 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = ../CollectionViewController.h; sourceTree = "<group>"; };
@@ -94,7 +94,6 @@
 		B926961F1DCE2C230023C14C = {
 			isa = PBXGroup;
 			children = (
-				E64C45671DCE4A6A00B58527 /* banana.png */,
 				B926962A1DCE2C230023C14C /* LogFood */,
 				B92696471DCE2C230023C14C /* LogFoodTests */,
 				B92696521DCE2C230023C14C /* LogFoodUITests */,
@@ -138,6 +137,7 @@
 		B926962B1DCE2C230023C14C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E64C45671DCE4A6A00B58527 /* banana.png */,
 				B926962C1DCE2C230023C14C /* main.m */,
 			);
 			name = "Supporting Files";
