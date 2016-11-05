@@ -24,7 +24,7 @@
     [[self collectionView]setDataSource:self];
     [[self collectionView]setDelegate:self];
     
-    arrayImages = [[NSArray alloc]initWithObjects:@"banana.png", nil];
+    arrayImages = [[NSArray alloc]initWithObjects:@"OrangeJuice.png", @"Milk.png", @"Banana.png", @"Bacon.png", @"Pizza-Slice.png", nil];
 }
 
 - (void)didReceiveMemoryWarning {
