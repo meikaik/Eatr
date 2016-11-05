@@ -25,5 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)AddPage:(id)sender {
+}
+- (IBAction)SettingsPage:(id)sender {
+}
 
 @end
