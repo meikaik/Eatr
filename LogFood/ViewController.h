@@ -13,6 +13,9 @@
     NSTimer *timer;
 }
 
+@property (nonatomic, strong) UIImage *recipeImage;
+extern NSMutableArray *eatenToday;
+
 
 @end
 

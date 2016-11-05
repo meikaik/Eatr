@@ -8,6 +8,7 @@
 
 #import "CollectionViewController.h"
 #import "CollectionViewCell.h"
+#import "ViewController.h"
 
 @interface CollectionViewController (){
     NSArray *arrayImages;
@@ -24,7 +25,7 @@
     [[self collectionView]setDataSource:self];
     [[self collectionView]setDelegate:self];
     
-    arrayImages = [[NSArray alloc]initWithObjects:@"banana.png", nil];
+    arrayImages = [[NSArray alloc]initWithObjects:@"banana.png", @"banana.png",@"banana.png",@"banana.png",@"banana.png",@"banana.png",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,7 +50,9 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%@", indexPath);
+    NSMutableArray *mutableStringArray = [arrayImages mutableCopy];
+    [mutableStringArray addObject:[arrayImages objectAtIndex:indexPath.item]];
+    [self performSegueWithIdentifier:@"goBack" sender:nil];
 }
 
 /*

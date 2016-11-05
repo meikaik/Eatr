@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-
+@synthesize recipeImage;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +24,7 @@
                                                 selector:@selector(showTime)
                                                 userInfo:NULL
                                                  repeats:YES];
+    
     // Category Food Carbs Protein Fats Calories
     NSArray *ingredients =
     [NSArray arrayWithObjects:
