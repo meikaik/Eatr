@@ -114,6 +114,20 @@
         [yourArray addObject:image];
     }
     
+    else if ([yourArray count] > 0){
+        CGRect collectionFrame = [self.collectionView frame];
+        [self.collectionView setFrame:CGRectMake(collectionFrame.origin.x,
+                                                 collectionFrame.origin.y,
+                                                 collectionFrame.size.width,
+                                                 collectionFrame.size.height + 110*([yourArray count]-[yourArray count]%3)/3)];
+        
+        
+        CGRect labelFrame = [timeLabel frame];
+        [timeLabel setFrame:CGRectMake(labelFrame.origin.x, labelFrame.origin.y+110*([yourArray count]-[yourArray count]%3)/3+110, labelFrame.size.width, labelFrame.size.height)];
+        CGRect backFrame = [_timeBack frame];
+        [_timeBack setFrame:CGRectMake(backFrame.origin.x, backFrame.origin.y+110*([yourArray count]-[yourArray count]%3)/3+110, backFrame.size.width, backFrame.size.height)];
+    }
+    
     [userDefaults setObject:yourArray forKey:@"1"];
     
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"]);
