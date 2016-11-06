@@ -20,7 +20,8 @@
 @property (nonatomic, strong) UIImage *recipeImage;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSMutableArray *eatenToday;
-@property (weak, nonatomic) IBOutlet UIImageView *myImage;
+@property (weak, nonatomic) IBOutlet UIImageView *timeBack;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 

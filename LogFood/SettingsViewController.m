@@ -44,7 +44,7 @@
 }
 
 - (void) returnCals {
-    NSNumber CalorieExpenditure = 864 - 9.72 * self.AgeSlider.text + 1 * (14.2 * self.WeightSlider.text + 503 * self.HeightSlider.text);
+    //NSNumber *CalorieExpenditure = 864 - 9.72 * self.AgeSlider.text + 1 * (14.2 * self.WeightSlider.text + 503 * self.HeightSlider.text);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

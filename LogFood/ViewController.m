@@ -82,11 +82,35 @@
 
     yourArray = [[[NSUserDefaults standardUserDefaults] arrayForKey:@"1"] mutableCopy];
     
+    CGRect collectionFrame = [self.collectionView frame];
+    NSLog(@"%f", collectionFrame.size.height);
+    
     if (image != nil){
+        CGRect collectionFrame = [self.collectionView frame];
+        [self.collectionView setFrame:CGRectMake(collectionFrame.origin.x,
+                                                     collectionFrame.origin.y,
+                                                     collectionFrame.size.width,
+                                                     collectionFrame.size.height + 110*([yourArray count]-[yourArray count]%3)/3)];
+        
+        
+        CGRect labelFrame = [timeLabel frame];
+        [timeLabel setFrame:CGRectMake(labelFrame.origin.x, labelFrame.origin.y+110*([yourArray count]-[yourArray count]%3)/3+110, labelFrame.size.width, labelFrame.size.height)];
+        CGRect backFrame = [_timeBack frame];
+        [_timeBack setFrame:CGRectMake(backFrame.origin.x, backFrame.origin.y+110*([yourArray count]-[yourArray count]%3)/3+110, backFrame.size.width, backFrame.size.height)];
+        
+        
         [yourArray addObject:image];
     }
 
     [userDefaults setObject:yourArray forKey:@"1"];
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 60, 375, 607)];
+    
+    //[scrollView addSubview:_timeBack];
+    //[_timeBack release];
+    //scrollView.contentSize = CGSizeMake(imageView.image.size.width, imageView.image.size.height);
+    //[window addSubview:scrollView];
+    //[scrollView release];
     
     image = nil;
 }
