@@ -44,12 +44,26 @@
 }
 
 - (void) returnCals {
-    //NSNumber *CalorieExpenditure = 864 - 9.72 * self.AgeSlider.text + 1 * (14.2 * self.WeightSlider.text + 503 * self.HeightSlider.text);
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calcFunc:(id)sender {
+    int *calorieRequired = 0;
+    if(_GenderBar.selectedSegmentIndex==0){
+        calorieRequired = 864 - 10 * [self.AgeSlider.text intValue] + (14 * [self.WeightSlider.text intValue]/2 + 503 * [self.HeightSlider.text intValue]/100);
+    }
+    else{
+        calorieRequired = 387 - 7 * [self.AgeSlider.text intValue] + (11 * [self.WeightSlider.text intValue]/2 + 661 * [self.HeightSlider.text intValue]/100);
+    }
+    
+    _CalorieExpenditure.text = [NSString stringWithFormat:@"%d", calorieRequired];
+    
+    NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+    [settings setObject:[NSString stringWithFormat:@"%d", calorieRequired] forKey:@"calorie"];
+}
 @end
 

@@ -10,9 +10,12 @@
 
 @interface SettingsViewController : UIViewController{
 }
+@property (weak, nonatomic) IBOutlet UISegmentedControl *GenderBar;
+
 @property (strong, nonatomic) IBOutlet UILabel *AgeSlider;
 @property (strong, nonatomic) IBOutlet UILabel *HeightSlider;
 @property (strong, nonatomic) IBOutlet UILabel *WeightSlider;
 @property (strong, nonatomic) IBOutlet UILabel *CalorieExpenditure;
+- (IBAction)calcFunc:(id)sender;
 
 @end

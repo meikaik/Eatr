@@ -68,6 +68,7 @@
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Couscous", @"36", @"6", @"0", @"176", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Pasta", @"42", @"7", @"1", @"200", nil], nil];
     
+    
         
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
@@ -83,7 +84,6 @@
     yourArray = [[[NSUserDefaults standardUserDefaults] arrayForKey:@"1"] mutableCopy];
     
     CGRect collectionFrame = [self.collectionView frame];
-    NSLog(@"%f", collectionFrame.size.height);
     
     if (image != nil){
         CGRect collectionFrame = [self.collectionView frame];
@@ -104,13 +104,8 @@
 
     [userDefaults setObject:yourArray forKey:@"1"];
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 60, 375, 607)];
-    
-    //[scrollView addSubview:_timeBack];
-    //[_timeBack release];
-    //scrollView.contentSize = CGSizeMake(imageView.image.size.width, imageView.image.size.height);
-    //[window addSubview:scrollView];
-    //[scrollView release];
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"]);
+        
     
     image = nil;
 }
