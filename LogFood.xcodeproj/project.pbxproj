@@ -36,7 +36,6 @@
 		B9183C631DCE7C4D00BA90DA /* Salmon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4B1DCE7C4D00BA90DA /* Salmon.png */; };
 		B9183C641DCE7C4D00BA90DA /* Spinach.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4C1DCE7C4D00BA90DA /* Spinach.png */; };
 		B9183C651DCE7C4D00BA90DA /* Tofu.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4D1DCE7C4D00BA90DA /* Tofu.png */; };
-		B9183C691DCE9A7F00BA90DA /* Spagetti.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C681DCE9A7F00BA90DA /* Spagetti.png */; };
 		B926962D1DCE2C230023C14C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B926962C1DCE2C230023C14C /* main.m */; };
 		B92696301DCE2C230023C14C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B926962F1DCE2C230023C14C /* AppDelegate.m */; };
 		B92696331DCE2C230023C14C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92696321DCE2C230023C14C /* ViewController.m */; };
@@ -50,6 +49,8 @@
 		E6779D531DCE5F1E0070AEC2 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6779D521DCE5F1E0070AEC2 /* CollectionViewCell.m */; };
 		E6779D561DCE5F300070AEC2 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6779D551DCE5F300070AEC2 /* CollectionViewController.m */; };
 		E6779D591DCE99080070AEC2 /* CollectionViewCellEaten.m in Sources */ = {isa = PBXBuildFile; fileRef = E6779D581DCE99080070AEC2 /* CollectionViewCellEaten.m */; };
+		E6779D5B1DCF83980070AEC2 /* Pasta.png in Resources */ = {isa = PBXBuildFile; fileRef = E6779D5A1DCF83980070AEC2 /* Pasta.png */; };
+		E6779D5D1DCF84710070AEC2 /* PeanutButter.png in Resources */ = {isa = PBXBuildFile; fileRef = E6779D5C1DCF84710070AEC2 /* PeanutButter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +100,6 @@
 		B9183C4B1DCE7C4D00BA90DA /* Salmon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salmon.png; sourceTree = "<group>"; };
 		B9183C4C1DCE7C4D00BA90DA /* Spinach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spinach.png; sourceTree = "<group>"; };
 		B9183C4D1DCE7C4D00BA90DA /* Tofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tofu.png; sourceTree = "<group>"; };
-		B9183C681DCE9A7F00BA90DA /* Spagetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spagetti.png; sourceTree = "<group>"; };
 		B92696281DCE2C230023C14C /* LogFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B926962C1DCE2C230023C14C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B926962E1DCE2C230023C14C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +125,8 @@
 		E6779D551DCE5F300070AEC2 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = ../CollectionViewController.m; sourceTree = "<group>"; };
 		E6779D571DCE99080070AEC2 /* CollectionViewCellEaten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCellEaten.h; sourceTree = "<group>"; };
 		E6779D581DCE99080070AEC2 /* CollectionViewCellEaten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCellEaten.m; sourceTree = "<group>"; };
+		E6779D5A1DCF83980070AEC2 /* Pasta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pasta.png; sourceTree = "<group>"; };
+		E6779D5C1DCF84710070AEC2 /* PeanutButter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PeanutButter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		B926962B1DCE2C230023C14C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E6779D5C1DCF84710070AEC2 /* PeanutButter.png */,
 				B9183C361DCE7C4D00BA90DA /* BeefsteakTomato.png */,
 				B9183C371DCE7C4D00BA90DA /* BreakfastSausage.png */,
 				B9183C381DCE7C4D00BA90DA /* Broccoli.png */,
@@ -229,7 +232,7 @@
 				B9183C321DCE6EA500BA90DA /* Banana.png */,
 				B9183C291DCE6CE200BA90DA /* OrangeJuice.png */,
 				B9183C2A1DCE6CE200BA90DA /* Pizza-Slice.png */,
-				B9183C681DCE9A7F00BA90DA /* Spagetti.png */,
+				E6779D5A1DCF83980070AEC2 /* Pasta.png */,
 				B926962C1DCE2C230023C14C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -360,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9183C5B1DCE7C4D00BA90DA /* Hummus.png in Resources */,
-				B9183C691DCE9A7F00BA90DA /* Spagetti.png in Resources */,
 				B9183C531DCE7C4D00BA90DA /* CheddarCheese.png in Resources */,
 				B9183C5D1DCE7C4D00BA90DA /* Muffin.png in Resources */,
 				B9183C631DCE7C4D00BA90DA /* Salmon.png in Resources */,
@@ -372,6 +374,8 @@
 				B9183C5E1DCE7C4D00BA90DA /* Oatmeal.png in Resources */,
 				B926963B1DCE2C230023C14C /* Assets.xcassets in Resources */,
 				B9183C551DCE7C4D00BA90DA /* ChickenNoodleSoup.png in Resources */,
+				E6779D5D1DCF84710070AEC2 /* PeanutButter.png in Resources */,
+				E6779D5B1DCF83980070AEC2 /* Pasta.png in Resources */,
 				B9183C611DCE7C4D00BA90DA /* RedPepper.png in Resources */,
 				B9183C2D1DCE6CE200BA90DA /* Pizza-Slice.png in Resources */,
 				B9183C511DCE7C4D00BA90DA /* Carrots.png in Resources */,

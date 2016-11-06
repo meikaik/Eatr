@@ -11,7 +11,11 @@
 
 @interface ViewController (){
     NSMutableArray *yourArray;
-    NSArray *ingredients;
+    NSArray *ingredients, *recipes;
+    double totalCarb, totalProtein, totalFat;
+    double percentCarb, percentProtein, percentFat;
+    double targetCarb, targetFat, targetProtein;
+    double changeCarb, changeFat, changeProtein;
 }
 
 @end
@@ -45,7 +49,7 @@
      [NSArray arrayWithObjects:@"Breakfast", @"Banana", @"23", @"1", @"0", @"90", nil],
      [NSArray arrayWithObjects:@"Breakfast", @"BreakfastSausage", @"3", @"5", @"14", @"150", nil],
      [NSArray arrayWithObjects:@"Breakfast", @"ItalianBread", @"14", @"2", @"1", @"77", nil],
-     [NSArray arrayWithObjects:@"Breakfast", @"PlainBagel", @"48", @"10", @"2", @"245", nil],
+     [NSArray arrayWithObjects:@"Breakfast", @"PlainBagel", @"48", @"5", @"2", @"245", nil],
      [NSArray arrayWithObjects:@"Breakfast", @"Egg", @"0", @"8", @"5", @"72", nil],
      [NSArray arrayWithObjects:@"Breakfast", @"PeanutButter", @"8", @"7", @"16", @"190", nil],
      [NSArray arrayWithObjects:@"Breakfast", @"Jam", @"8", @"0", @"0", @"30", nil],
@@ -55,7 +59,7 @@
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Chicken", @"1", @"21", @"3", @"120", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Pizza-Slice", @"35", @"13", @"12", @"300", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Ground Beef", @"0", @"23", @"8", @"200", nil],
-     [NSArray arrayWithObjects:@"Lunch/Dinner", @"Gourmet-Burger", @"0", @"22", @"12", @"200", nil],
+     [NSArray arrayWithObjects:@"Lunch/Dinner", @"Gourmet-Burger", @"3", @"22", @"12", @"200", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"BeefsteakTomato", @"5", @"1", @"0", @"25", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"RedPepper", @"9", @"1", @"0", @"46", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"GreenPepper", @"7", @"0", @"8", @"30", nil],
@@ -69,13 +73,12 @@
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Couscous", @"36", @"6", @"0", @"176", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Pasta", @"42", @"7", @"1", @"200", nil], nil];
     
-    recipes =
+    /*recipes =
     [NSArray arrayWithObjects:
      [NSArray arrayWithObjects:@"Cereal", @"71", @"19", @"14", nil],
      [NSArray arrayWithObjects:@"PBJ Oatmeal", @"29", @"9", @"17", nil],
      [NSArray arrayWithObjects:@"Soup Lunch", @"31", @"17", @"12", nil],
-     [NSArray arrayWithObjects:@"Bunless Burger", @"5", @"30", @"20", nil],
-     [NSArray arrayWithObjects:@"Hummus Snack", @"25", @"5", @"4", nil], nil];
+     [NSArray arrayWithObjects:@"Bunless Burger", @"5", @"15", @"20", nil], nil];*/
 
     
         
@@ -110,23 +113,22 @@
         
         [yourArray addObject:image];
     }
-
+    
     [userDefaults setObject:yourArray forKey:@"1"];
     
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"]);
     
     if ([[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"] >= 0){
-        int totalCal = [[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"];
-        double totalCarb = (totalCal * 0.4)/4;
-        double totalProtein = (totalCal * 0.3)/4;
-        double totalFat = (totalCal * 0.3)/8;
+        int totalCal = [[[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"] intValue];
+        totalCarb = (totalCal * 0.4)/4;
+        totalProtein = (totalCal * 0.3)/4;
+        totalFat = (totalCal * 0.3)/8;
     }
     
-    int carbIntake, fatIntake, proteinIntake = 0;
+    int carbIntake =0, fatIntake=0, proteinIntake = 0;
     for (int i = 0; i < [yourArray count]; i++){
         NSString *indexString = [yourArray objectAtIndex:i];
         for (int j = 0; j < [ingredients count]; j++){
-            NSLog(@"%@", [ingredients[j][1] stringByAppendingString:@".png"]);
             if ([indexString isEqualToString: [ingredients[j][1] stringByAppendingString:@".png"]]){
                 carbIntake += [ingredients[j][2] intValue];
                 fatIntake += [ingredients[j][4] intValue];
@@ -135,10 +137,41 @@
         }
     }
     
+    //Find BREAKFAST SCOREEE
     
     
     
-    NSLog(@"%u", carbIntake);
+    percentCarb = carbIntake / totalCarb;
+    percentFat = fatIntake / totalFat;
+    percentProtein = proteinIntake / totalProtein;
+    
+    targetFat = percentFat;
+    targetCarb = percentCarb;
+    targetProtein = percentProtein;
+
+
+    NSMutableArray *smallestChange = [[NSMutableArray alloc] init];
+    for (int i =0; i < [ingredients count]; i++){
+        changeCarb = fabs(targetCarb - [[[ingredients objectAtIndex:i] objectAtIndex:2] intValue] / totalCarb);
+        changeFat = fabs(targetFat - [[[ingredients objectAtIndex:i] objectAtIndex:4] intValue] / totalFat);
+        changeProtein = fabs(targetProtein - [[[ingredients objectAtIndex:i] objectAtIndex:3] intValue] / totalProtein);
+        double totalChange = changeCarb+changeFat+changeProtein;
+        NSLog(@"%f", totalChange);
+        [smallestChange addObject:[NSString stringWithFormat:@"%g", totalChange]];
+    }
+    
+    double smallestNum = [[smallestChange objectAtIndex:0] doubleValue];
+    int index = 0;
+    for (int i = 0; i < [smallestChange count]; i++){
+        if ([[smallestChange objectAtIndex:i] doubleValue] < smallestNum){
+            index = i;
+            smallestNum = [[smallestChange objectAtIndex:i] doubleValue];
+        }
+    }
+    
+    //NSLog(@"%@", @"BEst product is");
+    NSLog(@"%@", [[ingredients objectAtIndex:index] objectAtIndex:1]);
+    _shouldEat.image = [UIImage imageNamed:[[[ingredients objectAtIndex:index] objectAtIndex:1] stringByAppendingString:@".png"]];
     
     
     image = nil;

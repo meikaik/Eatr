@@ -14,16 +14,13 @@
     NSTimer *timer;
     UIImage *image;
 }
-
--(int)getCarb:(NSString *) indexString;
-
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (nonatomic, strong) UIImage *recipeImage;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSMutableArray *eatenToday;
 @property (weak, nonatomic) IBOutlet UIImageView *timeBack;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *shouldEat;
 
 @end
 
