@@ -11,6 +11,7 @@
 
 @interface ViewController (){
     NSMutableArray *yourArray;
+    NSArray *ingredients;
 }
 
 @end
@@ -32,7 +33,7 @@
                                                  repeats:YES];
     
     // Category Food Carbs Protein Fats Calories
-    NSArray *ingredients =
+    ingredients =
     [NSArray arrayWithObjects:
      [NSArray arrayWithObjects:@"Breakfast", @"OrangeJuice", @"26", @"2", @"1", @"110", nil],
      [NSArray arrayWithObjects:@"Breakfast", @"Milk", @"12", @"8", @"8", @"150", nil],
@@ -105,7 +106,32 @@
     [userDefaults setObject:yourArray forKey:@"1"];
     
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"]);
-        
+    
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"] >= 0){
+        int totalCal = [[NSUserDefaults standardUserDefaults] stringForKey:@"calorie"];
+        double totalCarb = (totalCal * 0.4)/4;
+        double totalProtein = (totalCal * 0.3)/4;
+        double totalFat = (totalCal * 0.3)/8;
+    }
+    
+    int carbIntake, fatIntake, proteinIntake = 0;
+    for (int i = 0; i < [yourArray count]; i++){
+        NSString *indexString = [yourArray objectAtIndex:i];
+        for (int j = 0; j < [ingredients count]; j++){
+            NSLog(@"%@", [ingredients[j][1] stringByAppendingString:@".png"]);
+            if ([indexString isEqualToString: [ingredients[j][1] stringByAppendingString:@".png"]]){
+                carbIntake += [ingredients[j][2] intValue];
+                fatIntake += [ingredients[j][4] intValue];
+                proteinIntake += [ingredients[j][3] intValue];
+            }
+        }
+    }
+    
+    
+    
+    
+    NSLog(@"%u", carbIntake);
+    
     
     image = nil;
 }

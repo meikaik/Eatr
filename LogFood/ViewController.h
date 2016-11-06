@@ -15,6 +15,8 @@
     UIImage *image;
 }
 
+-(int)getCarb:(NSString *) indexString;
+
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (nonatomic, strong) UIImage *recipeImage;
