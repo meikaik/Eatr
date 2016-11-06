@@ -7,17 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "CollectionViewCellEaten.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    NSMutableArray *yourArray;
+}
 
 @end
 
 @implementation ViewController
-@synthesize recipeImage;
+@synthesize recipeImage, image;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[self collectionView]setDataSource:self];
+    [[self collectionView]setDelegate:self];
     
     timer = [NSTimer scheduledTimerWithTimeInterval:0.5f
                                                   target:self
@@ -62,11 +68,27 @@
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Couscous", @"36", @"6", @"0", @"176", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Pasta", @"42", @"7", @"1", @"200", nil], nil];
     
+        
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    static dispatch_once_t once;
+    
+    dispatch_once(&once, ^ {
+        
+        // run once code goes here
+        [userDefaults setObject:[[NSMutableArray alloc] init] forKey:@"1"];
+    });
 
+
+    yourArray = [[[NSUserDefaults standardUserDefaults] arrayForKey:@"1"] mutableCopy];
     
+    if (image != nil){
+        [yourArray addObject:image];
+    }
+
+    [userDefaults setObject:yourArray forKey:@"1"];
     
-    
-    NSLog(@"%@", [[ingredients objectAtIndex:0] objectAtIndex:3]);
+    image = nil;
 }
 
 - (void)showTime{
@@ -74,6 +96,23 @@
     NSDateFormatter *dateFormatter=[NSDateFormatter new];
     [dateFormatter setDateFormat:@"HH:mm"];
     timeLabel.text=[dateFormatter stringFromDate:now];
+}
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return [yourArray count];
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    static NSString *cellIdentifier = @"Area";
+    CollectionViewCellEaten *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    //NSLog(@"%@", indexPath.item);
+    [[cell eatImage]setImage:[yourArray objectAtIndex:indexPath.item]];
+    
+    return cell;
 }
 
 
