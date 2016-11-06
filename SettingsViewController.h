@@ -10,6 +10,9 @@
 
 @interface SettingsViewController : UIViewController{
 }
-
+@property (strong, nonatomic) IBOutlet UIView *AgeSlider;
+@property (strong, nonatomic) IBOutlet UISlider *WeightSlider;
+@property (strong, nonatomic) IBOutlet UISlider *HeightSlider;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *GenderSlider;
 
 @end
