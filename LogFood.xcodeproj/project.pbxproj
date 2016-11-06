@@ -36,6 +36,7 @@
 		B9183C631DCE7C4D00BA90DA /* Salmon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4B1DCE7C4D00BA90DA /* Salmon.png */; };
 		B9183C641DCE7C4D00BA90DA /* Spinach.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4C1DCE7C4D00BA90DA /* Spinach.png */; };
 		B9183C651DCE7C4D00BA90DA /* Tofu.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C4D1DCE7C4D00BA90DA /* Tofu.png */; };
+		B9183C691DCE9A7F00BA90DA /* Spagetti.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C681DCE9A7F00BA90DA /* Spagetti.png */; };
 		B926962D1DCE2C230023C14C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B926962C1DCE2C230023C14C /* main.m */; };
 		B92696301DCE2C230023C14C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B926962F1DCE2C230023C14C /* AppDelegate.m */; };
 		B92696331DCE2C230023C14C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B92696321DCE2C230023C14C /* ViewController.m */; };
@@ -98,6 +99,7 @@
 		B9183C4B1DCE7C4D00BA90DA /* Salmon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salmon.png; sourceTree = "<group>"; };
 		B9183C4C1DCE7C4D00BA90DA /* Spinach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spinach.png; sourceTree = "<group>"; };
 		B9183C4D1DCE7C4D00BA90DA /* Tofu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tofu.png; sourceTree = "<group>"; };
+		B9183C681DCE9A7F00BA90DA /* Spagetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spagetti.png; sourceTree = "<group>"; };
 		B92696281DCE2C230023C14C /* LogFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B926962C1DCE2C230023C14C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B926962E1DCE2C230023C14C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				B9183C321DCE6EA500BA90DA /* Banana.png */,
 				B9183C291DCE6CE200BA90DA /* OrangeJuice.png */,
 				B9183C2A1DCE6CE200BA90DA /* Pizza-Slice.png */,
+				B9183C681DCE9A7F00BA90DA /* Spagetti.png */,
 				B926962C1DCE2C230023C14C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9183C5B1DCE7C4D00BA90DA /* Hummus.png in Resources */,
+				B9183C691DCE9A7F00BA90DA /* Spagetti.png in Resources */,
 				B9183C531DCE7C4D00BA90DA /* CheddarCheese.png in Resources */,
 				B9183C5D1DCE7C4D00BA90DA /* Muffin.png in Resources */,
 				B9183C631DCE7C4D00BA90DA /* Salmon.png in Resources */,
