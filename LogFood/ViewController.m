@@ -69,6 +69,14 @@
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Couscous", @"36", @"6", @"0", @"176", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Pasta", @"42", @"7", @"1", @"200", nil], nil];
     
+    recipes =
+    [NSArray arrayWithObjects:
+     [NSArray arrayWithObjects:@"Cereal", @"71", @"19", @"14", nil],
+     [NSArray arrayWithObjects:@"PBJ Oatmeal", @"29", @"9", @"17", nil],
+     [NSArray arrayWithObjects:@"Soup Lunch", @"31", @"17", @"12", nil],
+     [NSArray arrayWithObjects:@"Bunless Burger", @"5", @"30", @"20", nil],
+     [NSArray arrayWithObjects:@"Hummus Snack", @"25", @"5", @"4", nil], nil];
+
     
         
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
