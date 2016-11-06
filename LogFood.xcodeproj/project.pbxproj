@@ -12,7 +12,6 @@
 		B9183C2D1DCE6CE200BA90DA /* Pizza-Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C2A1DCE6CE200BA90DA /* Pizza-Slice.png */; };
 		B9183C331DCE6EA500BA90DA /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C321DCE6EA500BA90DA /* Banana.png */; };
 		B9183C351DCE6F6400BA90DA /* Bacon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C341DCE6F6400BA90DA /* Bacon.png */; };
-		B9183C4E1DCE7C4D00BA90DA /* BeefsteakTomato.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C361DCE7C4D00BA90DA /* BeefsteakTomato.png */; };
 		B9183C4F1DCE7C4D00BA90DA /* BreakfastSausage.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C371DCE7C4D00BA90DA /* BreakfastSausage.png */; };
 		B9183C501DCE7C4D00BA90DA /* Broccoli.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C381DCE7C4D00BA90DA /* Broccoli.png */; };
 		B9183C511DCE7C4D00BA90DA /* Carrots.png in Resources */ = {isa = PBXBuildFile; fileRef = B9183C391DCE7C4D00BA90DA /* Carrots.png */; };
@@ -76,7 +75,6 @@
 		B9183C2A1DCE6CE200BA90DA /* Pizza-Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pizza-Slice.png"; sourceTree = "<group>"; };
 		B9183C321DCE6EA500BA90DA /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
 		B9183C341DCE6F6400BA90DA /* Bacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bacon.png; sourceTree = "<group>"; };
-		B9183C361DCE7C4D00BA90DA /* BeefsteakTomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeefsteakTomato.png; sourceTree = "<group>"; };
 		B9183C371DCE7C4D00BA90DA /* BreakfastSausage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreakfastSausage.png; sourceTree = "<group>"; };
 		B9183C381DCE7C4D00BA90DA /* Broccoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Broccoli.png; sourceTree = "<group>"; };
 		B9183C391DCE7C4D00BA90DA /* Carrots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carrots.png; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				E6779D5C1DCF84710070AEC2 /* PeanutButter.png */,
-				B9183C361DCE7C4D00BA90DA /* BeefsteakTomato.png */,
 				B9183C371DCE7C4D00BA90DA /* BreakfastSausage.png */,
 				B9183C381DCE7C4D00BA90DA /* Broccoli.png */,
 				B9183C391DCE7C4D00BA90DA /* Carrots.png */,
@@ -380,7 +377,6 @@
 				B9183C2D1DCE6CE200BA90DA /* Pizza-Slice.png in Resources */,
 				B9183C511DCE7C4D00BA90DA /* Carrots.png in Resources */,
 				B9183C2C1DCE6CE200BA90DA /* OrangeJuice.png in Resources */,
-				B9183C4E1DCE7C4D00BA90DA /* BeefsteakTomato.png in Resources */,
 				B9183C641DCE7C4D00BA90DA /* Spinach.png in Resources */,
 				B9183C621DCE7C4D00BA90DA /* Rice.png in Resources */,
 				B9183C541DCE7C4D00BA90DA /* Chicken.png in Resources */,

@@ -26,7 +26,7 @@
     [[self collectionView]setDataSource:self];
     [[self collectionView]setDelegate:self];
 
-    arrayImages = [[NSArray alloc]initWithObjects:@"OrangeJuice.png", @"Milk.png", @"Banana.png", @"Bacon.png", @"Pizza-Slice.png", @"BeefSteakTomato.png", @"BreakfastSausage.png", @"Broccoli.png", @"Carrots.png", @"Cereal.png", @"CheddarCheese.png", @"Chicken.png", @"ChickenNoodleSoup.png", @"Chickpeas.png", @"Egg.png", @"Couscous.png", @"Gourmet-Burger.png", @"GreenPepper.png", @"Hummus.png", @"ItalianBread.png", @"Muffin.png", @"Oatmeal.png", @"Pancake.png", @"PlainBagel.png", @"PeanutButter.png", @"RedPepper.png", @"Rice.png", @"Salmon.png", @"Spinach.png", @"Tofu.png", @"Pasta.png", nil];
+    arrayImages = [[NSArray alloc]initWithObjects:@"OrangeJuice.png", @"Milk.png", @"Banana.png", @"Bacon.png", @"Pizza-Slice.png", @"BreakfastSausage.png", @"Broccoli.png", @"Carrots.png", @"Cereal.png", @"CheddarCheese.png", @"Chicken.png", @"ChickenNoodleSoup.png", @"Chickpeas.png", @"Egg.png", @"Couscous.png", @"Gourmet-Burger.png", @"GreenPepper.png", @"Hummus.png", @"ItalianBread.png", @"Muffin.png", @"Oatmeal.png", @"Pancake.png", @"PlainBagel.png", @"PeanutButter.png", @"RedPepper.png", @"Rice.png", @"Salmon.png", @"Spinach.png", @"Tofu.png", @"Pasta.png", nil];
 }
 
 - (void)didReceiveMemoryWarning {

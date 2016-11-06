@@ -58,7 +58,7 @@
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Rice", @"35", @"3", @"0", @"150", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Chicken", @"1", @"21", @"3", @"120", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Pizza-Slice", @"35", @"13", @"12", @"300", nil],
-     [NSArray arrayWithObjects:@"Lunch/Dinner", @"Ground Beef", @"0", @"23", @"8", @"200", nil],
+     [NSArray arrayWithObjects:@"Lunch/Dinner", @"BeafsteakTomato", @"0", @"23", @"8", @"200", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"Gourmet-Burger", @"3", @"22", @"12", @"200", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"BeefsteakTomato", @"5", @"1", @"0", @"25", nil],
      [NSArray arrayWithObjects:@"Lunch/Dinner", @"RedPepper", @"9", @"1", @"0", @"46", nil],
@@ -158,6 +158,10 @@
     percentCarb = carbIntake / totalCarb;
     percentFat = fatIntake / totalFat;
     percentProtein = proteinIntake / totalProtein;
+    
+    _carbLabel.text = [@"Carbohydrate: " stringByAppendingString:[[NSString stringWithFormat:@"%g", percentCarb*100] stringByAppendingString:@"%"]];
+    _proteinLabel.text = [@"Protein: " stringByAppendingString:[[NSString stringWithFormat:@"%g", percentProtein*100] stringByAppendingString:@"%"]];
+    _fatLabel.text = [@"Fat :" stringByAppendingString:[[NSString stringWithFormat:@"%g", percentFat*100] stringByAppendingString:@"%"]];
     
     targetFat = percentFat;
     targetCarb = percentCarb;

@@ -21,6 +21,9 @@
 @property (nonatomic, strong) NSMutableArray *eatenToday;
 @property (weak, nonatomic) IBOutlet UIImageView *timeBack;
 @property (weak, nonatomic) IBOutlet UIImageView *shouldEat;
+@property (weak, nonatomic) IBOutlet UILabel *carbLabel;
+@property (weak, nonatomic) IBOutlet UILabel *proteinLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fatLabel;
 
 @end
 
