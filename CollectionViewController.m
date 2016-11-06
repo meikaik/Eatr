@@ -12,6 +12,7 @@
 
 @interface CollectionViewController (){
     NSArray *arrayImages;
+    NSInteger *index;
 }
 
 @end
@@ -50,9 +51,19 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSMutableArray *mutableStringArray = [arrayImages mutableCopy];
-    [mutableStringArray addObject:[arrayImages objectAtIndex:indexPath.item]];
+    //[eatenToday addObject:[arrayImages objectAtIndex:indexPath.item]];
+    index = indexPath.item;
     [self performSegueWithIdentifier:@"goBack" sender:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"goBack"]) {
+        ViewController *photo = [segue destinationViewController];
+        photo.image = [arrayImages objectAtIndex:index];
+        //photo.image = [arrayImages objectAtIndex:index];
+        //photo.number = 1;
+        index = nil;
+    }
 }
 
 /*
