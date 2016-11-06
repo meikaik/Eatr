@@ -109,8 +109,7 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
     static NSString *cellIdentifier = @"Area";
     CollectionViewCellEaten *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    //NSLog(@"%@", indexPath.item);
-    [[cell eatImage]setImage:[yourArray objectAtIndex:indexPath.item]];
+    [[cell eatImage]setImage:[UIImage imageNamed:[yourArray objectAtIndex:indexPath.item]]];
     
     return cell;
 }
